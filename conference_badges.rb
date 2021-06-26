@@ -18,5 +18,6 @@ end
 
 def printer(attendees)
    attendees.each {|attendee| puts badge_maker(attendee)}
-   attendees.each_with_index {|attendee, index| puts "Hello, #{attendee}! You'll be assigned to room #{index +1}!"}
+   puts assign_rooms(attendees)
+#    attendees.each_with_index {|attendee, index| puts "Hello, #{attendee}! You'll be assigned to room #{index +1}!"}
 end
